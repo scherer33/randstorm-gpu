@@ -1,0 +1,12 @@
+CUDA_KERNELS {
+    global:
+        pbkdf2_hmac_sha512_kernel;
+        hash160_batch_kernel;
+        pubkey_to_hash160_kernel;
+        keccak256_batch_kernel;
+        multi_hash_batch_kernel;
+        randstorm_secp256k1_hash160_kernel;
+        randstorm_secp256k1_kernel;
+    local:
+        *;
+};

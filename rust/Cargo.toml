@@ -1,0 +1,16 @@
+[package]
+name = "randstorm"
+version = "0.1.0"
+edition = "2021"
+description = "Bitcoin Randstorm Exploit - Rust port with CUDA GPU acceleration"
+
+[dependencies]
+bitcoin = { version = "0.32" }
+rayon = "1.10"
+clap = { version = "4.5", features = ["derive"] }
+indicatif = "0.17"
+hex = "0.4"
+libloading = "0.9.0"
+
+[build-dependencies]
+cc = "1.0"
