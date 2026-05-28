@@ -1,0 +1,28 @@
+[package]
+name = "randstorm-cuda"
+version = "0.2.0"
+edition = "2021"
+description = "RandStorm Bitcoin Exploit — Optimized CUDA GPU kernel"
+
+[dependencies]
+bitcoin = { version = "0.32" }
+rayon = "1.10"
+clap = { version = "4.5", features = ["derive"] }
+indicatif = "0.17"
+hex = "0.4"
+libloading = "0.9.0"
+
+[build-dependencies]
+cc = "1.0"
+
+[[example]]
+name = "gen_vuln"
+path = "examples/gen_vuln.rs"
+
+[[example]]
+name = "debug_gpu"
+path = "examples/debug_gpu.rs"
+
+[[example]]
+name = "debug_one"
+path = "examples/debug_one.rs"
