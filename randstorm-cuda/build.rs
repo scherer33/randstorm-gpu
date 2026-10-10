@@ -64,7 +64,9 @@ fn main() {
         "randstorm_upload_ec_table",
         "randstorm_gpu_init",
         "randstorm_gpu_free",
-        "randstorm_pk_to_hash160",
+        "randstorm_pk_to_jacobian",
+        "randstorm_read_jacobian",
+        "randstorm_jacobian_to_hash160",
     ];
 
     let version_script = format!("{}/kernel/export.map", manifest_dir);
