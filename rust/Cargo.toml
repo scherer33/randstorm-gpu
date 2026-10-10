@@ -1,8 +1,8 @@
 [package]
 name = "randstorm"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
-description = "Bitcoin Randstorm Exploit - Rust port with CUDA GPU acceleration"
+description = "RandStorm Bitcoin Exploit — Optimized CUDA with Batch Inversion"
 
 [dependencies]
 bitcoin = { version = "0.32" }
